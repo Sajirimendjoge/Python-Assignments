@@ -1,0 +1,93 @@
+	Q.1.	Write a program to Python find the values which is not divisible 3 but is should be a multiple of 7.
+
+	Mylist = [i for i in range(1,100) if i % 3 ! = 0 and i % 7 == 0]
+	print(Mylist)
+	
+  
+
+	Q.2. Write a program in Python to multiple the element of list by itself using traditional function and pass the function
+	# to map to complete the operation.
+	
+	mylist = [2,4,6,8,10]
+  def mult(mylist):
+	    return mylist*
+  result = list(map(mult,mylist))
+	print(result)
+	
+  
+	Q.3.Write a program to Python find out the character in a string which is uppercase using list comprehension.
+	
+	str = "Corona Virus"
+  upper = [i for i in str if i.isupper()]
+	print(','.join(upper))
+	
+
+	Q.4. Write a program to construct a dictionary from the two lists containing the names of students and their corresponding subjects.
+	# The dictionary should maps the students with their respective subjects. Let’s see how to do this using for loops and
+	
+
+	Student = ['Smit', 'Jaya', 'Rayyan']
+	capital = ['CSE', 'Networking', 'Operating System']
+	dict = {k:v for k,v in zip(Student,capital)}
+	print(dict)
+	
+
+
+Q.5   Yeild, next and Generators.
+
+Yield : 
+Yield stops function’s execution and sends a value back to the caller, but retains enough state to enable function to resume where it is left off.Yield can be used to produce sequence of values.
+
+Next : 
+Returns the next value in the iterator. 
+
+Generators:
+A generator is effectively a iterator function that returns the data before it is finished, but it pauses at that point, and you can resume the function at that point. 
+
+
+Q.6  Write a program in Python using generators to reverse the string. Input String = “Consultadd Training”
+
+def rev_str(my_str):
+    length = len(my_str)
+    for i in range(length - 1, -1, -1):
+        yield my_str[i]
+for char in rev_str("Consultadd Training"):
+    print(char)
+
+
+Q.7 Give example of a decorators.
+ 
+Basically, a decorator takes in a function, adds some functionality, and returns it.
+Here I have taken a function named ordinary and decorated inside a decorator  
+def make_pretty(fun):
+       def inner():
+             print(“I am decorated now”)
+             fun()
+      return inner
+def ordinary():
+      print(“ordinary”)
+
+
+Q8.  Frontend learnings:
+
+Hypertext Markup Language (HTML) and Cascading Style Sheets (CSS). HTML tells a browser how to display the content of web pages, while CSS styles that content. Bootstrap is a helpful framework for managing HTML and CSS.
+JavaScript (JS). JS makes web pages interactive. There are many JavaScript libraries (such as jQuery, React.js, and Zepto.js) and frameworks (such as Angular, Vue, Backbone, and Ember) for faster and easier web development.
+
+Front end technologies and the company using it:
+
+HTML:   All the e commerce and service based company like Amazon, ebay, Paypal, Google, Apple, Microsoft.
+
+CSS: All the e commerce and service based company like Amazon, ebay, Paypal, Google, Apple, Microsoft, FACEBOOK
+
+JAVASCRIPT: All the e commerce and service based company like Amazon, ebay, PayPal, Google, Apple, Microsoft, FACEBOOK
+
+ANGULAR JS: Tesla, Airbnb, Microsoft
+
+REACT  : HULU
+
+Bootstrap :  Cisco, TCS
+
+Django, Flask, Pyramid : Consaltadd, Apple
+ 
+
+ 
